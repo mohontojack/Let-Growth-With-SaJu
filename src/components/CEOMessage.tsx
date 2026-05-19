@@ -5,7 +5,8 @@
 
 import React from "react";
 import { motion } from "motion/react";
-import { Quote } from "lucide-react";
+import { Quote, ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function CEOMessage() {
   return (
@@ -58,9 +59,17 @@ export default function CEOMessage() {
                 </p>
               </div>
 
-              <div className="mt-12 flex items-center gap-6">
-                <div className="w-20 h-px bg-luxury-gold"></div>
-                <div className="font-mono text-xs uppercase tracking-widest text-luxury-gold">Sazzad Hossain Saju — CEO and Founder</div>
+              <div className="mt-12 flex flex-col sm:flex-row sm:items-center gap-6">
+                <div className="flex items-center gap-6">
+                  <div className="w-12 md:w-20 h-px bg-luxury-gold"></div>
+                  <div className="font-mono text-xs uppercase tracking-widest text-luxury-gold">Sazzad Hossain Saju — CEO and Founder</div>
+                </div>
+                <Link 
+                  to="/founder" 
+                  className="inline-flex items-center gap-2 text-white/80 hover:text-luxury-gold hover:translate-x-1 transition-all text-xs font-mono uppercase tracking-widest sm:ml-auto group"
+                >
+                  Expertise & UAE Profile <ArrowUpRight size={14} className="text-luxury-gold" />
+                </Link>
               </div>
             </div>
           </div>

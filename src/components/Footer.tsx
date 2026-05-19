@@ -49,8 +49,8 @@ export default function Footer() {
             <Link to="/locations/manama" className="hover:text-luxury-gold transition-colors">Manama</Link>
           </div>
           <div className="flex flex-col gap-6">
-            <span className="text-white/40">Legal</span>
-            <a href="#" className="hover:text-luxury-gold transition-colors">Privacy</a>
+            <span className="text-white/40">The Founder</span>
+            <Link to="/founder" className="hover:text-luxury-gold transition-colors text-luxury-gold">Sazzad Hossain Saju</Link>
             <a href="#" className="hover:text-luxury-gold transition-colors">NDA Policy</a>
             <a href="#" className="hover:text-luxury-gold transition-colors">Vision 2030</a>
           </div>

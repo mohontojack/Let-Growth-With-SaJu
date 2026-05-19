@@ -12,6 +12,7 @@ import AllServices from "./pages/AllServices";
 import Locations from "./pages/Locations";
 import LocationDetail from "./pages/LocationDetail";
 import Metaverse from "./pages/Metaverse";
+import Founder from "./pages/Founder";
 import Layout from "./components/Layout";
 
 export default function App() {
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="/locations/:slug" element={<LocationDetail />} />
           <Route path="/services/:slug" element={<ServiceDetail />} />
           <Route path="/metaverse" element={<Metaverse />} />
+          <Route path="/founder" element={<Founder />} />
         </Routes>
       </Layout>
     </Router>
