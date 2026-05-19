@@ -20,7 +20,7 @@ export default function CEOMessage() {
           >
             <div className="aspect-[4/5] overflow-hidden rounded-3xl border border-white/10 group">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1200&auto=format&fit=crop" 
+                src="https://i.ibb.co.com/ymsQBNKS/2.png" 
                 alt="SaJu CEO" 
                 className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0"
               />
