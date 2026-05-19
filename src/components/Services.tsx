@@ -67,7 +67,7 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-6 md:grid-rows-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-6 md:grid-rows-3 gap-4">
           {/* Growth - Large Card */}
           <Link to="/services/growth" className="md:col-span-4 md:row-span-2 group">
             <motion.div 
@@ -140,6 +140,57 @@ export default function Services() {
               <h3 className="text-2xl font-display font-bold text-white uppercase tracking-tighter mb-4">PropTech</h3>
               <p className="text-slate-500 text-xs leading-relaxed mb-6">Future-proofing real estate operations with bespoke software and metaverse loops.</p>
               <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center mt-auto group-hover:translate-x-1 transition-all">
+                <ArrowRight size={16} />
+              </div>
+            </motion.div>
+          </Link>
+
+          {/* Defense */}
+          <Link to="/services/defense" className="md:col-span-2 group">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="h-full glass p-8 relative overflow-hidden group-hover:border-blue-500/40 transition-all duration-500"
+            >
+              <div className="text-blue-500 font-mono text-[10px] mb-4">04 — SECURITY_DEF</div>
+              <h3 className="text-2xl font-display font-bold text-white uppercase tracking-tighter mb-4">Cyber Defense</h3>
+              <p className="text-slate-500 text-xs leading-relaxed mb-6">Offensive and defensive security infrastructure for sovereign protection.</p>
+              <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center mt-auto group-hover:border-blue-500 transition-all">
+                <ArrowRight size={16} />
+              </div>
+            </motion.div>
+          </Link>
+
+          {/* GovTech */}
+          <Link to="/services/govtech" className="md:col-span-2 group">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 }}
+              className="h-full glass p-8 relative overflow-hidden group-hover:border-indigo-500/40 transition-all duration-500"
+            >
+              <div className="text-indigo-400 font-mono text-[10px] mb-4">05 — CIVIC_OS</div>
+              <h3 className="text-2xl font-display font-bold text-white uppercase tracking-tighter mb-4">GovTech</h3>
+              <p className="text-slate-500 text-xs leading-relaxed mb-6">Modernizing governance with interoperable citizen experience and scale.</p>
+              <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center mt-auto group-hover:border-indigo-400 transition-all">
+                <ArrowRight size={16} />
+              </div>
+            </motion.div>
+          </Link>
+
+          {/* ESG */}
+          <Link to="/services/esg" className="md:col-span-2 group">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              className="h-full glass p-8 relative overflow-hidden group-hover:border-emerald-500/40 transition-all duration-500"
+            >
+              <div className="text-emerald-400 font-mono text-[10px] mb-4">06 — GREEN_LOOP</div>
+              <h3 className="text-2xl font-display font-bold text-white uppercase tracking-tighter mb-4">ESG Tech</h3>
+              <p className="text-slate-500 text-xs leading-relaxed mb-6">Sustainability loops and institutional reporting for the circular economy.</p>
+              <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center mt-auto group-hover:border-emerald-500 transition-all">
                 <ArrowRight size={16} />
               </div>
             </motion.div>

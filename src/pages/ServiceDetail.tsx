@@ -42,6 +42,39 @@ const serviceData: Record<string, any> = {
       "Blockchain-backed Smart Contracts"
     ],
     image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop"
+  },
+  defense: {
+    title: "Cyber Defense",
+    subtitle: "Sovereign security infrastructure and offensive-defensive intelligence nodes.",
+    features: [
+      "Zero Trust Security Implementation",
+      "GCC Compliance & Data Sovereignty",
+      "Autonomous Threat Intelligence",
+      "Advanced Encryption Protocols"
+    ],
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop"
+  },
+  govtech: {
+    title: "GovTech",
+    subtitle: "Digital governance systems designed for the next generation of citizen experience.",
+    features: [
+      "Interoperable Citizen Portals",
+      "Blockchain Governance Systems",
+      "E-Voting & Secure Identity",
+      "Automated Regulatory Compliance"
+    ],
+    image: "https://images.unsplash.com/photo-1541872703-74c5e443d1fe?q=80&w=1200&auto=format&fit=crop"
+  },
+  esg: {
+    title: "ESG Tech",
+    subtitle: "Measurable sustainability loops and institutional ESG reporting infrastructure.",
+    features: [
+      "Real-time Carbon Tracking",
+      "Circular Economy Lifecycle Management",
+      "ESG Data Lake Architecture",
+      "Sustainability Audit Automation"
+    ],
+    image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=1200&auto=format&fit=crop"
   }
 };
 

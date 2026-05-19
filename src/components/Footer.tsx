@@ -4,6 +4,7 @@
  */
 
 import React from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Send, Linkedin, Twitter, Instagram } from "lucide-react";
 
@@ -20,23 +21,32 @@ export default function Footer() {
           </div>
           
           <div className="flex flex-col gap-6">
-            <div className="flex items-center gap-3">
+            <Link to="/locations/riyadh" className="flex items-center gap-3 hover:text-luxury-gold transition-colors">
               <span className="w-1.5 h-1.5 bg-luxury-gold rotate-45"></span>
               <span>Global Intelligence Node — Riyadh, KSA</span>
-            </div>
-            <div className="flex items-center gap-3">
+            </Link>
+            <Link to="/locations/dubai" className="flex items-center gap-3 hover:text-luxury-gold transition-colors">
               <span className="w-1.5 h-1.5 bg-luxury-green rotate-45"></span>
               <span>PropTech Loop — Dubai, UAE</span>
-            </div>
+            </Link>
           </div>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-16">
           <div className="flex flex-col gap-6">
             <span className="text-white/40">Verticals</span>
-            <a href="#services" className="hover:text-luxury-gold transition-colors">Growth</a>
-            <a href="#services" className="hover:text-luxury-gold transition-colors">Intelligence</a>
-            <a href="#services" className="hover:text-luxury-gold transition-colors">Infra</a>
+            <Link to="/services/growth" className="hover:text-luxury-gold transition-colors">Strategic Marketing</Link>
+            <Link to="/services/intelligence" className="hover:text-luxury-gold transition-colors">Agentic AI</Link>
+            <Link to="/services/infrastructure" className="hover:text-luxury-gold transition-colors">PropTech</Link>
+            <Link to="/services/defense" className="hover:text-luxury-gold transition-colors">Cyber Defense</Link>
+          </div>
+          <div className="flex flex-col gap-6">
+            <span className="text-white/40">Locations</span>
+            <Link to="/locations" className="hover:text-luxury-gold transition-colors">All Nodes</Link>
+            <Link to="/locations/riyadh" className="hover:text-luxury-gold transition-colors">Riyadh</Link>
+            <Link to="/locations/dubai" className="hover:text-luxury-gold transition-colors">Dubai</Link>
+            <Link to="/locations/abu-dhabi" className="hover:text-luxury-gold transition-colors">Abu Dhabi</Link>
+            <Link to="/locations/manama" className="hover:text-luxury-gold transition-colors">Manama</Link>
           </div>
           <div className="flex flex-col gap-6">
             <span className="text-white/40">Legal</span>

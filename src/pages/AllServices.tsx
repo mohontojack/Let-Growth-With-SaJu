@@ -7,7 +7,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
-import { ArrowRight, TrendingUp, Cpu, Database, Layout, Smartphone, MessageSquareCode } from "lucide-react";
+import { ArrowRight, TrendingUp, Cpu, Database, Layout, Smartphone, MessageSquareCode, Shield, Globe } from "lucide-react";
 import { cn } from "@/src/lib/utils";
 
 const services = [
@@ -37,6 +37,33 @@ const services = [
     features: ["Digital Twins", "ERP Ecosystems", "Cloud Infra"],
     icon: Cpu,
     color: "text-white"
+  },
+  {
+    slug: "defense",
+    vertical: "Cyber Defense",
+    code: "DEF_04",
+    description: "Sovereign security infrastructure and offensive-defensive intelligence nodes.",
+    features: ["Zero Trust Architecture", "Threat Intelligence", "Sovereign Encryption"],
+    icon: Shield,
+    color: "text-blue-500"
+  },
+  {
+    slug: "govtech",
+    vertical: "GovTech",
+    code: "GOV_05",
+    description: "Digital governance systems designed for the next generation of citizen experience.",
+    features: ["Citizen Portals", "E-Voting Systems", "Gov-Cloud Integration"],
+    icon: Globe,
+    color: "text-indigo-400"
+  },
+  {
+    slug: "esg",
+    vertical: "ESG Tech",
+    code: "ESG_06",
+    description: "Measurable sustainability loops and institutional ESG reporting infrastructure.",
+    features: ["Carbon Tracking", "Circular Economy OS", "ESG Compliance"],
+    icon: TrendingUp,
+    color: "text-emerald-400"
   }
 ];
 

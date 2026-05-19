@@ -15,9 +15,18 @@ export default function Hero({ onOpenChat }: { onOpenChat: () => void }) {
     <section id="home" className="relative min-h-screen flex items-center pt-24 overflow-hidden">
       {/* Background Atmospheric Layer */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_20%_20%,rgba(212,175,55,0.05)_0%,transparent_50%)]"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_20%_20%,rgba(212,175,55,0.08)_0%,transparent_50%)]"></div>
         <div className="absolute top-1/2 right-0 w-[800px] h-[800px] bg-luxury-blue/20 rounded-full blur-[160px] -translate-y-1/2 translate-x-1/2"></div>
         
+        {/* UAE High-End Visual overlay */}
+        <div className="absolute inset-0 opacity-[0.08]">
+          <img 
+            src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2070&auto=format&fit=crop" 
+            className="w-full h-full object-cover"
+            alt="UAE Architecture"
+          />
+        </div>
+
         {/* Animated Grid */}
         <div className="absolute inset-0 opacity-[0.03] [mask-image:radial-gradient(ellipse_at_center,black,transparent_80%)]">
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px]"></div>
@@ -33,14 +42,14 @@ export default function Hero({ onOpenChat }: { onOpenChat: () => void }) {
             className="inline-flex items-center gap-3 px-4 py-2 glass-gold rounded-full mb-12"
           >
             <div className="w-2 h-2 bg-luxury-green rounded-full animate-pulse shadow-glow-green"></div>
-            <span className="text-[10px] uppercase tracking-[0.4em] text-luxury-gold font-bold">The Agentic Era — GCC 2030</span>
+            <span className="text-[8px] md:text-[10px] uppercase tracking-[0.4em] text-luxury-gold font-bold">The Agentic Era — GCC 2030</span>
           </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="text-6xl md:text-8xl xl:text-[11rem] font-display font-light mb-12 text-white tracking-tighter leading-[0.75]"
+            className="text-5xl md:text-8xl xl:text-[11rem] font-display font-light mb-12 text-white tracking-tighter leading-[0.8] md:leading-[0.75]"
           >
             Let <span className="font-bold text-gradient-gold">Growth</span><br/>
             <span className="italic font-serif text-white/50">Nexus</span> <span className="font-bold relative">
@@ -49,19 +58,19 @@ export default function Hero({ onOpenChat }: { onOpenChat: () => void }) {
                 initial={{ width: 0 }}
                 animate={{ width: '100%' }}
                 transition={{ duration: 1.5, delay: 1 }}
-                className="absolute bottom-4 left-0 h-1 bg-luxury-gold/30 -z-10"
+                className="absolute bottom-2 md:bottom-4 left-0 h-0.5 md:h-1 bg-luxury-gold/30 -z-10"
               />
             </span>
           </motion.h1>
 
-          <div className="flex flex-col md:flex-row gap-12 items-start md:items-center">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start md:items-center">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
-              className="text-xl md:text-2xl text-slate-400 leading-relaxed max-w-xl font-light tracking-wide"
+              className="text-lg md:text-2xl text-slate-400 leading-relaxed max-w-xl font-light md:tracking-wide"
             >
-              Architecting the digital dominance of Tomorrow. We bridge the gap between visionary leadership and agentic execution.
+              Architecting digital dominance. We bridge visionary leadership and agentic execution for the GCC's elite brands.
             </motion.p>
 
             <motion.div

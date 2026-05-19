@@ -7,6 +7,10 @@ import React from "react";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Portfolio from "../components/Portfolio";
+import LocationsPreview from "../components/LocationsPreview";
+import Methodology from "../components/Methodology";
+import CEOMessage from "../components/CEOMessage";
+import Partners from "../components/Partners";
 import Leadership from "../components/Leadership";
 import Blog from "../components/Blog";
 import { motion } from "motion/react";
@@ -41,6 +45,10 @@ export default function Home({ onOpenChat }: HomeProps) {
 
       <Services />
       <Portfolio />
+      <Methodology />
+      <CEOMessage />
+      <Partners />
+      <LocationsPreview />
       <Leadership />
       <Blog />
     </>
