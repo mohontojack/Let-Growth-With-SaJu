@@ -29,8 +29,8 @@ export default function CEOMessage() {
             
             <div className="absolute -bottom-10 -right-10 w-64 glass p-8 rounded-2xl border-white/10 hidden md:block">
               <div className="text-luxury-gold font-mono text-[10px] uppercase tracking-widest mb-2 font-bold">The Founder</div>
-              <div className="text-white font-display text-xl uppercase tracking-tighter">SaJu</div>
-              <div className="text-white/40 text-[9px] uppercase tracking-widest mt-1">Chief Architect of Growth</div>
+              <div className="text-white font-display text-xl uppercase tracking-tighter">Sazzad Hossain Saju</div>
+              <div className="text-white/40 text-[9px] uppercase tracking-widest mt-1">CEO and Founder</div>
             </div>
           </motion.div>
 
@@ -60,7 +60,7 @@ export default function CEOMessage() {
 
               <div className="mt-12 flex items-center gap-6">
                 <div className="w-20 h-px bg-luxury-gold"></div>
-                <div className="font-mono text-xs uppercase tracking-widest text-luxury-gold">SaJu — Founder & CEO</div>
+                <div className="font-mono text-xs uppercase tracking-widest text-luxury-gold">Sazzad Hossain Saju — CEO and Founder</div>
               </div>
             </div>
           </div>

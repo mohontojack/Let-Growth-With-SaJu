@@ -10,8 +10,8 @@ import { Linkedin, Mail } from "lucide-react";
 
 const leaders = [
   {
-    name: "SaJu",
-    role: "CEO & Founder",
+    name: "Sazzad Hossain Saju",
+    role: "CEO and Founder",
     bio: "Visionary architect of the LetGrowthWithSaJu ecosystem, specializing in digital luxury and strategic GCC growth loops.",
     image: "https://i.ibb.co.com/ymsQBNKS/2.png",
   },
