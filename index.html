@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LetGrowthWithSaJu — Premium Tech Ecosystem</title>
+    <script>
+      // Defensive fix for environments where window.fetch is a getter only
+      try {
+        if (Object.getOwnPropertyDescriptor(window, 'fetch')?.set === undefined) {
+          const originalFetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            value: originalFetch,
+            configurable: true,
+            writable: true,
+            enumerable: true
+          });
+        }
+      } catch (e) {
+        console.warn('Fetch safety guard failed:', e);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
